@@ -28,24 +28,23 @@ exports.checkLength = function(str){
     }
 }
 
-
-exports.containsUpper =function(str){
-  let hasUpper="false";
-  try{
-    for(let c=0;c<str.length;c++){
+exports.containsUpper=function(str){
+    let hasUpper="false";
+    try{
+      for(let c=0;c>=65||c<=90;c++){
+      }
+        if(c=){
+          return "true";
+        }
+        else{
+          throw new PasswordMessage("Does not have uppercase character if the variable hasUpper is false");
+        }
     }
-    if(){
-      return "true";
+    catch(e){
+      console.log(e.message);
+      return hasUpper;
     }
-    else if(){
-      return ;
-    }
-    else{
-
-    }
-  }
 }
-
 
 exports.containsLower =function(str){
 
