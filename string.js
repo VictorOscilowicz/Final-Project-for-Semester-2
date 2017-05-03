@@ -31,31 +31,71 @@ exports.checkLength = function(str){
 exports.containsUpper=function(str){
     let hasUpper="false";
     try{
-      for(let c=0;c>=65||c<=90;c++){
+      for(let c=0;c<str.length;c++){
       }
-        if(c=){
-          return "true";
+        if(c>=65 || c<=90){
+          hasUpper="true";
         }
         else{
-          throw new PasswordMessage("Does not have uppercase character if the variable hasUpper is false");
+          throw new PasswordMessage("Does not have an uppercase character if the variable hasUpper is false");
         }
     }
     catch(e){
-      console.log(e.message);
+      console.log(e.name+": "+e.message);
       return hasUpper;
     }
 }
 
 exports.containsLower =function(str){
-
+  let hasLower="false";
+  try{
+    for(let c=0;c<str.length;c++){
+    }
+      if(c>=97 || c<=122){
+        hasLower="true";
+      }
+      else{
+        throw new PasswordMessage("Does not have a lowercase character if the variable hasLower is false");
+      }
+  }
+  catch(e){
+    console.log(e.name+": "+e.message);
+    return hasLower;
+  }
 }
-
 
 exports.containsNumerical =function(str){
-
+  let hasNumerical="false";
+  try{
+    for(let c=0;c<str.length;c++){
+    }
+      if(c>=48 || c<=57){
+        hasNumerical="true";
+      }
+      else{
+        throw new PasswordMessage("Does not have a numerical character if the variable hasNumerical is false");
+      }
+  }
+  catch(e){
+    console.log(e.name+": "+e.message);
+    return hasNumerical;
+  }
 }
 
-
 exports.containsSpecial =function(str){
-
+  let hasSpecial="false";
+  try{
+    for(let c=0;c<str.length;c++){
+    }
+      if(c>= || c<=){
+        hasSpecial="true";
+      }
+      else{
+        throw new PasswordMessage("Does not have a special character if the variable hasSpecial is false");
+      }
+  }
+  catch(e){
+    console.log(e.name+": "+e.message);
+    return hasSpecial;
+  }
 }
