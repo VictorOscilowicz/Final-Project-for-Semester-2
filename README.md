@@ -4,7 +4,6 @@ This project completes the password checking password program that we saw in cla
 
 
 ## string.js
-
 You have 6 functions to completes.
 -  PasswordMessage()
 -  inRange()
@@ -50,3 +49,15 @@ This function is an object constructor outside of a class; you SHOULD NOT use th
 -  This function has all of the same logic as contains upper.
 -  Change the variable names and values so that you are looking for numerical characters.
 -  The range of lowercase numbers is 48 to 57 inclusively.
+
+#### contains special
+-  This function should declare a variable, hasSpecial and initialize it to false;
+-  Declare an array special = [33,64,35,36,37,94,38,42]
+-  Loop through the special list, throwing and returning the correct values.
+
+## passwordGUI
+This file glues all of the code together and makes the terminal cycle through its options.  Much of it as already made for you.  We will learn how this process works next year.
+
+-  Inside of the question you should write some conditional statements which assigns the boolean false to passesAllChecks if each contains function is not true.
+
+-  You must critically think about how to write the conditional statements so it checks all conditions and will not skip any.

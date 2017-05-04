@@ -13,7 +13,7 @@ function getString(){
 
         //Conditional Statements here.
         if(){
-          
+
         }
 
         if(!passesAllChecks){
