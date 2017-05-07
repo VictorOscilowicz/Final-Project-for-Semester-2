@@ -12,8 +12,8 @@ function getString(){
         let passesAllChecks = true;
 
         //Conditional Statements here.
-        if(){
-
+        if(passesAllChecks.length==false){
+          passesAllChecks=false;
         }
 
         if(!passesAllChecks){
